@@ -1,0 +1,21 @@
+{
+  "name": "paraderos",
+  "version": "0.0.0",
+  "description": "Version web paraderos transantiago",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian General <fabianwgl@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "materialize-css": "^0.98.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta11",
+    "transantiago-client": "^1.0.2"
+  }
+}
