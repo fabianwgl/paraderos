@@ -16,6 +16,7 @@
     "materialize-css": "^0.98.0",
     "path": "^0.12.7",
     "pug": "^2.0.0-beta11",
+    "request": "^2.79.0",
     "transantiago-client": "^1.0.2"
   }
 }
