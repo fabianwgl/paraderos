@@ -20,7 +20,20 @@ exports.paradero = (req, res) => {
         req.connection.socket.remoteAddress;
       //LOG
       var payload = {
-          text: "PARADERO REQUESTED \n "+paradero+" \n IP: "+ip
+          attatchments: [{          	
+          	author_name: "paraderos",
+          	title: "REQUEST",
+          	text: "Paradero: "+paradero+" \n IP: "+ip,
+          	fields: [
+          	{
+          		title:"Paradero",
+          		value: paradero
+          	},{
+          		title: "IP",
+          		value: ip
+          	}],
+          	footer: "by fwgl"
+          }]
         };
         request({
           url: process.env.SLACK_APP_URL,
